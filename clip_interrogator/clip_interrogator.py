@@ -96,7 +96,7 @@ class Interrogator():
         start_time = time.time()
         config = self.config
 
-        clip_model_name, clip_model_pretrained_name = config.clip_model_name.split('/', 2)
+        clip_model_name, clip_model_pretrained_name = config.clip_model_name.split('/', 1)
 
         if config.clip_model is None:
             if not config.quiet:
